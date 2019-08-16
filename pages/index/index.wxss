@@ -1,0 +1,59 @@
+.searCh{
+  height: 60rpx;
+  background-color: #ff2d4a;
+  padding:18rpx;
+}
+
+.iconColor{
+  color:black;
+}
+.searCh-input{
+  background-color:#fff;
+  border-radius: 4px;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .swIper{
+  height: 450rpx;
+} */
+.slide-image{
+  width: 750rpx;
+  height:340rpx;
+}
+.menus{
+  display: flex;
+  justify-content: space-around;
+}
+.menus image{
+  width:128rpx;
+  height:140rpx;
+}
+
+/* 女装开始 */
+.faShion{
+  box-sizing: border-box;
+}
+.faShion-top image{
+  width:100%;
+  height:80rpx;
+  margin-top: 20rpx;
+}
+.faShion-bottom{
+  display: flex;
+  padding-left: 15rpx;
+}
+.faShion .faShinbottom-left image{
+  width:230rpx;
+  height:360rpx;
+}
+.faShinbottom-right{
+  display: flex;
+  flex-wrap: wrap;
+}
+.faShinbottom-right image{
+  width:233rpx;
+  height:182rpx;
+  margin-left: 5px;
+}

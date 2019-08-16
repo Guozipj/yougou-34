@@ -1,1 +1,78 @@
-<view>首页</view>
+<view class="Content">
+
+  <!-- 搜索开始 -->
+  <view>
+    <view class="searCh">
+      <view class="searCh-input">
+        <view>
+            <icon type="search" size="16" class="iconColor" />
+            搜索 
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 搜索结束 -->
+
+  <!-- 轮播图开始 -->
+  <view class="swIper">
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    circular
+    indicator-dots
+    indicator-color
+    indicator-active-color='#fff'
+    >
+      <block wx:for="{{imgUrls}}"
+      wx:key='{{index}}'>
+        <swiper-item>
+          <image src="{{item.image_src}}" 
+          class="slide-image" 
+          mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+
+  <!-- 分类菜单开始 -->
+    <view class="menus">  
+      <image
+      wx:for='{{menus}}'
+      wx:key='{{index}}'
+      src='{{item.image_src}}'
+      >
+      </image>
+    </view>
+  <!-- 分类菜单结束 -->
+
+  <!-- 时尚女装开始 -->
+  <view class="faShion"
+  wx:for='{{fashoin}}'
+  wx:key='{{index}}'>
+
+    <!-- 时尚女装上 -->
+    <view class="faShion-top">
+      <image src='{{item.floor_title.image_src}}'></image>
+    </view>
+
+    <!-- 时尚女装下 -->
+    <view class="faShion-bottom"
+   
+    >
+      <view class="faShinbottom-left"><image src="{{item.product_list[0].image_src}}"
+      mode='aspectFill'></image></view>
+
+      <view class="faShinbottom-right">
+        <image 
+        wx:for='{{item.product_list}}'
+        wx:key='{{index}}'
+        wx:if='{{index>0}}'
+        src="{{item.image_src}}"></image>
+      </view>
+    </view>
+
+  </view>
+  <!-- 时尚女装结束 -->
+
+</view>

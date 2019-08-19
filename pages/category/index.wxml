@@ -30,14 +30,16 @@
       <text>/</text>
 
 
-      <view class="watchImages" 
-         wx:for='{{item.children}}' 
-         wx:key="{{index}}">
+      <view class="watchImages">
 
-        <view class="watchItem">
+        <navigator 
+        url="/pages/goodsDetal/index?keyword={{item.cat_name}}" 
+        class="watchItem" 
+        wx:for='{{item.children}}' 
+         wx:key="{{index}}">
           <image src="{{item.cat_icon}}"></image>
-          <view>{{item.cat_name}}</view>
-        </view>
+          <view>{{item.cat_name}}</view> 
+        </navigator>
 
       </view>
     </view>

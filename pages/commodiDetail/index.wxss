@@ -1,0 +1,105 @@
+.swIper image{
+  width:100%;
+  height:100%;
+}
+.swIper{
+  height:720rpx;
+}
+
+
+/* 详情 */
+.deTail-botom{
+  padding: 30rpx 30rpx;
+}
+.detail-price{
+  color:#eb4450;
+  margin:15rpx 0;
+  font-size: 20px;
+}
+.detail-Center{
+  display:flex;
+}
+.detail-Center-view{
+  font-size: 13px;
+  flex: 1;
+  margin-right:40rpx;
+  margin-bottom: 30rpx;
+}
+.detail-Icon{
+  font-size: 23rpx;
+  color:#9b9b9b;
+  width:140rpx;
+  height:85rpx;
+  line-height: 38rpx;
+  text-align: center;
+  border-left:1px solid #dddddd;
+}
+.icon-shoucang{
+  font-size: 30rpx;
+}
+.expressage{
+  color:#a7a7a7;
+  font-size: 30rpx;
+}
+
+/* 详情结束 */
+
+.zheshigeBackground{
+  height:30rpx;
+  background-color:#f4f4f4;
+  margin-bottom:20rpx;
+}
+/* 促销 */
+
+.promotion{
+  padding:10rpx 30rpx;
+  
+}
+.promtion-top{
+  display:flex;
+}
+.promotion-cuxiao{
+  font-size:32rpx;
+  margin-right:50rpx;
+}
+.promotion-price{
+  color:#ef7983;
+  font-size: 32rpx;
+}
+
+.promotion-bottom{
+  display:flex;
+  
+}
+.promotion-bottom view{
+  width:25%; 
+}
+
+.purChase{
+  font-size: 32rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 70rpx;
+  background-color:#eb4450;
+  padding:20rpx 20rpx;
+}
+.please-price{
+  font-size: 32rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 70rpx;
+  background-color:#f4b73f;
+  padding:20rpx 20rpx;
+}
+
+.icon-Gouwuche,
+.icon-Kefu{
+    font-size: 30rpx;
+    color:#848484;
+    text-align: center;
+    line-height: 53rpx;
+}
+.icon-gouwuche,
+.icon-kefu{
+  margin-left: 60rpx;
+}

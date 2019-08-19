@@ -4,10 +4,10 @@
   <view>
     <view class="searCh">
       <view class="searCh-input">
-        <view class="searCh-inpu-view">
+        <navigator url='/pages/search/index' class="searCh-inpu-view">
             <icon type="search" size="16" class="iconColor" />
             小米 
-        </view>
+        </navigator> 
       </view>
     </view>
   </view>
@@ -31,25 +31,27 @@
 
 
 <!-- 商品列表开始 -->
-  <view class="goods_list" 
+  <navigator 
+  url="/pages/commodiDetail/index?goods_id={{item.goods_id}}"
+  class="goods_list" 
   wx:for='{{goodsDetail}}'
   wx:key='{{index}}'
   >
-  
+
     <view class="goods_list_left">
       <image  src="{{item.goods_small_logo}}"></image>
     </view>
 
     <view class="goods_list_right">
         <view class="goods_list-top">
-         {{goods_name}}
+         {{item.goods_name}}
         </view>
         <view class="goods_list-bottom">¥
-        <text>69.</text>
+        <text>{{item.goods_price}}.</text>
         00</view>
     </view>
   
-  </view>
+  </navigator>
 <!-- 商品列表结束 -->
 
 

@@ -5,7 +5,8 @@
     "pages/cart/index",
     "pages/personage/index",
     "pages/goodsDetal/index",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/commodiDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

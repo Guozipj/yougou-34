@@ -14,20 +14,23 @@ Page({
       current:index
     })
   },
-  onLoad(){
+  onLoad(options){
+
+    console.log(options)
+
     //发送商品详情请求接口
     request({
       url:'/goods/search',
       data:{
-        query:'曲面电视',
+        query:options.keyword,
         pagenum:1,
         pagesize:18
       }
     }).then(res=>{
       console.log(res)
-      const { message } = res.data
+      const { goods } = res.data.message
        this.setData({
-         goodsDetail:message
+         goodsDetail: goods
        })
     })
   }

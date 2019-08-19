@@ -1,0 +1,70 @@
+
+<!-- 商品详情页 -->
+<view>
+
+<!-- 轮播图 -->
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-color
+    circular
+    indicator-active-color="{{color}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    class="swIper">
+  <block 
+     wx:for="{{imgUrls}}"
+     wx:key='{{index}}'>
+    <swiper-item>
+      <image src="{{item.pics_big}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 轮播图 -->
+
+
+<!-- 价钱详情 -->
+<view class="deTail-botom">
+  <view class="detail-price">¥ {{message.goods_price}}</view>
+  <view class="detail-Center">
+    <view class="detail-Center-view">{{message.goods_name}}</view>
+    <view class='detail-Icon'>  
+        <view class="iconfont icon-shoucang"></view>
+        <view>收藏</view>
+    </view> 
+  </view>
+ <view class="expressage">快递：免运费</view>
+</view>
+<!-- 价钱详情 -->
+
+<view class="zheshigeBackground"></view>
+
+<!-- 促销 -->
+
+<view class="promotion">
+   <view class="promtion-top">
+      <view class="promotion-cuxiao">促销</view>
+      <view class="promotion-price">满300元减30元</view>
+   </view>
+    
+
+</view>
+<view class="promotion-bottom">
+        <view class="icon-Kefu">
+           <view class="iconfont icon-kefu"></view>
+           联系客服
+        </view>
+        <view class="icon-Gouwuche">
+           <view class="iconfont icon-gouwuche"></view>
+           购物车
+        </view>
+        <view class="please-price">加入购物车</view>
+        <view class="purChase">立即购买</view>
+    </view>
+
+
+    <rich-text nodes='{{ detail.goods_introduce }}'>
+
+
+    </rich-text>
+</view>

@@ -16,7 +16,6 @@
 
 .navs_item{
   display: flex;
-  border-bottom:1px solid #eeeeee;
   height:100rpx;
   line-height: 100rpx;
   justify-content: space-around;
@@ -31,21 +30,25 @@
 
 .goods_list{
   display: flex;
-  border:1px solid red;
+  border:1px solid #eeeeee;
 }
 
 .goods_list_left{
   width:230rpx;
   height: 260rpx;
+  padding:20rpx 30rpx;
 }
 .goods_list_left image{
   width:90%;
   height:90%;
 }
 .goods_list_right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
   margin-left:5px;
-  font-size: 13px;
+  font-size: 14px;
   padding:10px 15px;
 }
 .goods_list-bottom{

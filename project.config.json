@@ -40,13 +40,34 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/search/index",
-					"pathName": "pages/search/index",
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goodsDetal/index",
+					"pathName": "pages/goodsDetal/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "goods_id=43982",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/commodiDetail/index",
+					"pathName": "pages/commodiDetail/index",
+					"query": "goods_id=43982",
 					"scene": null
 				}
 			]

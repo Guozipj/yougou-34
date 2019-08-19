@@ -1,17 +1,8 @@
+
 <view class="Content">
 
   <!-- 搜索开始 -->
-  <view>
-    <view class="searCh">
-      <view class="searCh-input">
-        <view>
-            <icon type="search" size="16" class="iconColor" />
-            搜索 
-        </view>
-      </view>
-    </view>
-  </view>
-  <!-- 搜索结束 -->
+   <search/>
 
   <!-- 轮播图开始 -->
   <view class="swIper">

@@ -1,1 +1,48 @@
-<view>分类页面</view>
+<!-- 搜索开始 -->
+<search/>
+<!-- 搜索结束 -->
+
+
+
+<view class="category">
+  <!-- 左侧导航开始 -->
+  <view class="navs-Left">
+    <view wx:for='{{navs}}' 
+    wx:key='{{index}}' 
+    bindtap="handNavs" 
+    data-index='{{index}}' 
+    class="{{current==index ? 'active':''}}">
+      {{item.cat_name}}
+    </view>
+  </view>
+  <!-- 左侧导航结束 -->
+
+
+
+
+  <!-- 右厕导航栏开始 -->
+  <view class="navs-Right">
+
+    <view class="wachTingTV" 
+       wx:for='{{navs[current].children}}' 
+       wx:key='{{index}}'>
+      <text>/</text> {{item.cat_name}}
+      <text>/</text>
+
+
+      <view class="watchImages" 
+         wx:for='{{item.children}}' 
+         wx:key="{{index}}">
+
+        <view class="watchItem">
+          <image src="{{item.cat_icon}}"></image>
+          <view>{{item.cat_name}}</view>
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+  <!-- 右厕导航栏结束 -->
+
+</view>

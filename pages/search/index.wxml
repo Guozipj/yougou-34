@@ -1,0 +1,33 @@
+<view class="searchIndex">
+
+ <!-- 搜索 -->
+ <view class="Input">
+
+   <view class="Input-background">
+     <icon type="search" size="16" class="iconColor" />
+     <input placeholder="请输入你想要的商品"></input>
+   </view>
+   
+   <view class="conCel">取消</view>
+
+ </view>
+ 
+
+  <!-- 历史记录 -->
+  <view class="hiStory">  
+      <view>历史记录</view>
+      <view class="hiStory-x">x</view>
+  </view>
+
+
+  <!-- 搜索详情 -->
+  <view class="searchDetail">
+    <view>小米</view>
+    <view>小米123</view>
+    <view>小米1</view>
+    <view>小米32</view>
+    <view>小米2rr22r</view>
+    <view>小米</view>
+    <view>小米a</view>
+  </view>  
+</view>

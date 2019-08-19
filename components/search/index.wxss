@@ -1,0 +1,18 @@
+/* components/search/index.wxss */
+.searCh{
+  height: 60rpx;
+  background-color: #ff2d4a;
+  padding:18rpx;
+}
+
+.iconColor{
+  color:black;
+}
+.searCh-input{
+  background-color:#fff;
+  border-radius: 4px;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

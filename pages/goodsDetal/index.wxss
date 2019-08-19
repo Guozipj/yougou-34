@@ -1,0 +1,66 @@
+.searCh{
+  background-color:#eeeeee;
+  height:100rpx;
+  padding:20rpx 20rpx;
+}
+.searCh-input{
+  background-color:#fff;
+  font-size:33rpx;
+  padding: 10rpx 0;
+  margin-top:20rpx;
+}
+.searCh-inpu-view{
+  margin-left:30rpx;
+}
+/* 搜索结束 */
+
+.navs_item{
+  display: flex;
+  border-bottom:1px solid #eeeeee;
+  height:100rpx;
+  line-height: 100rpx;
+  justify-content: space-around;
+  font-size: 32rpx;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.active{
+  color:red;
+}
+/* 导航头结束 */
+
+.goods_list{
+  display: flex;
+  border:1px solid red;
+}
+
+.goods_list_left{
+  width:230rpx;
+  height: 260rpx;
+}
+.goods_list_left image{
+  width:90%;
+  height:90%;
+}
+.goods_list_right{
+  flex: 1;
+  margin-left:5px;
+  font-size: 13px;
+  padding:10px 15px;
+}
+.goods_list-bottom{
+  font-size: 14px;
+  color:red;
+  padding:30px 0 0 0;
+}
+.goods_list .goods_list-top{
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods_list-bottom text{
+  font-size: 18px;
+}
+/* 商品列表结束 */

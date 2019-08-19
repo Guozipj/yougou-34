@@ -1,0 +1,8 @@
+<!-- 搜索组件 -->
+    <view class="searCh">
+      <view class="searCh-input">
+        <icon type="search" size="16" class="iconColor" />
+            搜索 
+        </view>
+    </view>
+

@@ -1,0 +1,59 @@
+<view>
+
+<!-- 搜索开始 -->
+  <view>
+    <view class="searCh">
+      <view class="searCh-input">
+        <view class="searCh-inpu-view">
+            <icon type="search" size="16" class="iconColor" />
+            小米 
+        </view>
+      </view>
+    </view>
+  </view>
+<!-- 搜索结束 -->
+
+
+
+<!-- 导航栏开始 -->
+ <view class="navs_item">
+  <view class="naVs {{current===index ? 'active':''}}"
+   wx:for='{{navs}}'
+   wx:key="{{index}}"
+   bindtap="handnaVs"
+   data-index='{{index}}'>
+
+      {{item}}
+
+    </view>
+ </view>
+<!-- 导航栏结束 -->
+
+
+<!-- 商品列表开始 -->
+  <view class="goods_list" 
+  wx:for='{{goodsDetail}}'
+  wx:key='{{index}}'
+  >
+  
+    <view class="goods_list_left">
+      <image  src="{{item.goods_small_logo}}"></image>
+    </view>
+
+    <view class="goods_list_right">
+        <view class="goods_list-top">
+         {{goods_name}}
+        </view>
+        <view class="goods_list-bottom">¥
+        <text>69.</text>
+        00</view>
+    </view>
+  
+  </view>
+<!-- 商品列表结束 -->
+
+
+
+
+
+</view>

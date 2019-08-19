@@ -1,1 +1,93 @@
-/* pages/category/index.wxss */
+.category{
+ box-sizing: border-box;
+ display: flex;
+}
+/* 搜索 */
+.searCh{
+  height: 60rpx;
+  background-color: #ff2d4a;
+  padding:18rpx;
+}
+
+.iconColor{
+  color:black;
+}
+.searCh-input{
+  background-color:#fff;
+  border-radius: 4px;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 搜索 */
+
+/* 左侧 */
+.navs-Left view{
+  width:200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 12px;
+  background-color:#f4f4f4;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+ 
+}
+
+/* 右边 */
+.navs-Top{
+  text-align: center;
+  margin: 20px 0;
+}
+.wachTingTV text{
+  color:#a9a9a9;
+}
+.navs-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.bottom-images image{
+  width:120rpx;
+  height:120rpx;
+}
+.navs-Left .active{
+  color: red;
+  background-color:#fff;
+  font-weight: 800;
+  position: relative;
+  border-left:2px solid red;
+}
+.navs-Left .active::before{
+  display: block;
+  width:5px;
+  height: 80rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.navs-Right{
+  flex: 1;
+  padding: 0 15rpx;
+}
+.wachTingTV{
+  text-align: center;
+  margin-top:20rpx;
+}
+.watchImages{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.watchImages .watchItem{
+  width:33%;
+  font-size: 26rpx;
+  text-align: center;
+  margin-top:5px;
+}
+.watchImages .watchItem image{
+  width: 80%;
+  height:150rpx;
+}
